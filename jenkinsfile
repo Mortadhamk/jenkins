@@ -6,7 +6,7 @@ pipeline {
             steps {
                 script {
                     // Checkout the Git repository
-                    git branch: '',
+                    git branch: 'main',
                     credentialsId: 'Github',
                     url: 'https://github.com/Mortadhamk/jenkins/'
                 }

@@ -1,0 +1,17 @@
+pipeline {
+    agent any;
+
+    stages {
+        stage('Build') {
+            steps {
+                script {
+                    // Checkout the Git repository
+                    git branch: '',
+                    credentialsId: 'Github',
+                    url: 'https://github.com/Mortadhamk/jenkins/'
+                }
+            }
+        }
+
+    }
+}
